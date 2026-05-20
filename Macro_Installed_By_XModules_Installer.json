@@ -1,0 +1,24 @@
+{
+  "Name": "Macro_Installed_By_XModules_Installer",
+  "CreationDate": "2026-5-6",
+  "Commands": [
+    {
+      "Command": "comment",
+      "Target": "open // https://ui.vision/",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "This is just placeholder macro. It was installed by the XModules installer. It can be deleted safely.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "calcd_dpi_12.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    }
+  ]
+}

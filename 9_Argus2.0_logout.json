@@ -1,0 +1,126 @@
+{
+  "Name": "9_Argus2.0_logout",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "XClick",
+      "Target": "argus_dpi_120.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "10000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "server_field_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "192.168.2.183",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "loginbutton_dpi_120.png",
+      "Value": "",
+      "Description": "click login button"
+    },
+    {
+      "Command": "pause",
+      "Target": "18000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "profile_icon_dpi_120.png",
+      "Value": "",
+      "Description": "Click on profile button"
+    },
+    {
+      "Command": "pause",
+      "Target": "200",
+      "Value": "",
+      "Description": "wait for 2 msec."
+    },
+    {
+      "Command": "XClick",
+      "Target": "logout_button_dpi_120.png",
+      "Value": "",
+      "Description": "Click on logout button"
+    },
+    {
+      "Command": "pause",
+      "Target": "5000",
+      "Value": "",
+      "Description": "wait for 5 sec"
+    },
+    {
+      "Command": "bringBrowserToForeground",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "XType // ${KEY_TAB}",
+      "Value": "",
+      "Description": "press TAB "
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": "press ENTER on Yes button"
+    },
+    {
+      "Command": "echo",
+      "Target": "Application Logout successfully.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "9_Argus2.0_logout",
+      "Value": "TestCaseName",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "Report_Logger",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

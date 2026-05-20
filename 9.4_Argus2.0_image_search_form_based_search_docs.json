@@ -1,0 +1,216 @@
+{
+  "Name": "9.4_Argus2.0_image_search_form_based_search_docs",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "XClick",
+      "Target": "argus_dpi_120.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "12000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "server_field_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "192.168.2.183",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "loginbutton_dpi_120.png",
+      "Value": "",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "15000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "scope_dpi_120.png",
+      "Value": "",
+      "Description": "click on scope"
+    },
+    {
+      "Command": "pause",
+      "Target": "8000",
+      "Value": "",
+      "Description": "pause for 8 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "clear_button_dpi_940.png",
+      "Value": "",
+      "Description": "click on clear button"
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": "pause for 3 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "submit_button_dpi_120.png",
+      "Value": "",
+      "Description": "click on submit button"
+    },
+    {
+      "Command": "pause",
+      "Target": "100",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "form_based_search_tab__dpi_940.png",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XMoveText",
+      "Target": "Select The Entity For The Search",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "dropdown_field_entity_search_dpi_940.png",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_D}",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "fetch_all_radio_dpi_940.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "submit_formbased_dpi_940.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "26000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Document List opened successfully.",
+      "Value": "blue",
+      "Description": "Print in log"
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "captureDesktopScreenshot",
+      "Target": "page.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "eng",
+      "Value": "!ocrLanguage",
+      "Description": ""
+    },
+    {
+      "Command": "OCRExtractScreenshot",
+      "Target": "page.png",
+      "Value": "ocrText",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${ocrText}",
+      "Value": "blue",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "var m='${ocrText}'.match(/Document list \\((\\d+)\\)/i); return m ? m[1] : 'Not Found';",
+      "Value": "docCount",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Document list opened successfully. Dynamic Document Count = ${docCount}",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "9.4_Argus2.0_image_search_form_based_search_docs",
+      "Value": "TestCaseName",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "Report_Logger",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

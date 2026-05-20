@@ -1,0 +1,294 @@
+{
+  "Name": "7_Argus2.0_text_search_translation",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "XClick",
+      "Target": "argus_dpi_120.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "13000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "server_field_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "192.168.2.183",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "loginbutton_dpi_120.png",
+      "Value": "",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "16000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "scope_dpi_120.png",
+      "Value": "",
+      "Description": "click on scope"
+    },
+    {
+      "Command": "pause",
+      "Target": "8000",
+      "Value": "",
+      "Description": "pause for 8 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "clear_button_dpi_940.png",
+      "Value": "",
+      "Description": "click on clear button"
+    },
+    {
+      "Command": "pause",
+      "Target": "1000",
+      "Value": "",
+      "Description": "pause for 3 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "submit_button_dpi_120.png",
+      "Value": "",
+      "Description": "click on submit button"
+    },
+    {
+      "Command": "pause",
+      "Target": "1000",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "searchfield_dpi_120.png",
+      "Value": "",
+      "Description": "clicking search field"
+    },
+    {
+      "Command": "XType",
+      "Target": "India",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "100",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XMoveText",
+      "Target": "Translation",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "trans12_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "hindi1_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "search_icon_dpi_120.png",
+      "Value": "",
+      "Description": "click on search icon"
+    },
+    {
+      "Command": "pause",
+      "Target": "45000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Document list visible",
+      "Value": "blue",
+      "Description": "Print in log"
+    },
+    {
+      "Command": "captureDesktopScreenshot",
+      "Target": "page.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "OCRExtractScreenshot",
+      "Target": "page.png",
+      "Value": "ocrText",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${ocrText}",
+      "Value": "blue",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "executeScript_Sandbox // return '${ocrText}'.indexOf('भारत') > -1 || '${ocrText}'.indexOf('INDIAN') > -1",
+      "Value": "isFound",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "if_v2 // ${isFound} == \"true\"",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "echo // PASS : Translation working correctly. भारत found in results.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "else // ",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "echo // FAIL : Translation not working. भारत not found.",
+      "Value": "red",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "endif // ",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "visualVerify // chinese_text_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "visualVerify",
+      "Target": "bharat_text_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "if_v2",
+      "Target": "${!LastCommandOK} == false",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "FAIL : भारत translated text not found in search results.",
+      "Value": "red",
+      "Description": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "PASS : भारत translated text found successfully.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "endif",
+      "Target": " ",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Hence translation functionality is passed for language Hindi.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "1000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "7_Argus2.0_text_search_translation",
+      "Value": "TestCaseName",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "Report_Logger",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "Name": "9.5_Argus2.0_image_search_form_based_search_chats",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "XClick",
+      "Target": "argus_dpi_120.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "12000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "server_field_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "192.168.2.183",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "loginbutton_dpi_120.png",
+      "Value": "",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "16000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "scope_dpi_120.png",
+      "Value": "",
+      "Description": "click on scope"
+    },
+    {
+      "Command": "pause",
+      "Target": "8000",
+      "Value": "",
+      "Description": "pause for 8 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "clear_button_dpi_940.png",
+      "Value": "",
+      "Description": "click on clear button"
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": "pause for 3 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "submit_button_dpi_120.png",
+      "Value": "",
+      "Description": "click on submit button"
+    },
+    {
+      "Command": "pause",
+      "Target": "100",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "form_based_search_tab__dpi_940.png",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XMoveText",
+      "Target": "Select The Entity For The Search",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "dropdown_field_entity_search_dpi_940.png",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_C}",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_C}",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_C}",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "fetch_all_radio_dpi_940.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "submit_formbased_dpi_940.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "20000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Chats list opened successfully.",
+      "Value": "blue",
+      "Description": "Print in log"
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "captureDesktopScreenshot",
+      "Target": "chat_page.png",
+      "Value": "",
+      "Description": "Capture chats screen"
+    },
+    {
+      "Command": "store",
+      "Target": "eng",
+      "Value": "!ocrLanguage",
+      "Description": "Set OCR language"
+    },
+    {
+      "Command": "OCRExtractScreenshot",
+      "Target": "chat_page.png",
+      "Value": "ocrText",
+      "Description": "Extract OCR text"
+    },
+    {
+      "Command": "echo",
+      "Target": "${ocrText}",
+      "Value": "blue",
+      "Description": "Print OCR output"
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "OCRSearch",
+      "Target": "Chats list",
+      "Value": "match",
+      "Description": "Verify chats list exists"
+    },
+    {
+      "Command": "if",
+      "Target": "${!LastCommandOK} == true",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "PASS : Chats list screen loaded successfully.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "FAIL : Chats list not found.",
+      "Value": "red",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "9.5_Argus2.0_image_search_form_based_search_chats",
+      "Value": "TestCaseName",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "Report_Logger",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "Name": "8_Argus2.0_text_search_transliteration",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "XClick",
+      "Target": "argus_dpi_120.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "14000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "server_field_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "192.168.2.183",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "loginbutton_dpi_120.png",
+      "Value": "",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "15000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "scope_dpi_120.png",
+      "Value": "",
+      "Description": "click on scope"
+    },
+    {
+      "Command": "pause",
+      "Target": "8000",
+      "Value": "",
+      "Description": "pause for 8 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "clear_button_dpi_940.png",
+      "Value": "",
+      "Description": "click on clear button"
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": "pause for 3 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "submit_button_dpi_120.png",
+      "Value": "",
+      "Description": "click on submit button"
+    },
+    {
+      "Command": "pause",
+      "Target": "1000",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "searchfield_dpi_120.png",
+      "Value": "",
+      "Description": "clicking search field"
+    },
+    {
+      "Command": "XType",
+      "Target": "ताजमहल ",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "100",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XMoveText",
+      "Target": "Transliteration",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "translit_dpi_132.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "english_translit_dpi_132.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "search_icon_dpi_120.png",
+      "Value": "",
+      "Description": "click on search icon"
+    },
+    {
+      "Command": "pause",
+      "Target": "25000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Document list visible",
+      "Value": "blue",
+      "Description": "Print in log"
+    },
+    {
+      "Command": "XClick",
+      "Target": "resultcard_dpi_132.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "4000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "captureDesktopScreenshot",
+      "Target": "page.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "OCRExtractScreenshot",
+      "Target": "page.png",
+      "Value": "ocrText",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${ocrText}",
+      "Value": "blue",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "visualVerify // chinese_text_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "visualVerify",
+      "Target": "tajmahal_text_dpi_132.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "if_v2",
+      "Target": "${!LastCommandOK} == false",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "FAIL : Taj Mahal transliterated text not found in search results.",
+      "Value": "red",
+      "Description": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "PASS : Taj Mahal transliterated text found successfully.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "endif",
+      "Target": " ",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Hence transliteration functionality is passed for language English.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "1000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "8_Argus2.0_text_search_transliteration",
+      "Value": "TestCaseName",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "Report_Logger",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "Name": "Report_Logger",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "if_v2",
+      "Target": "${!statusOK} == true",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "PASS",
+      "Value": "Status",
+      "Description": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "FAIL",
+      "Value": "Status",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "${TestCaseName},${Status},${!runtime}",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "csvSave",
+      "Target": "SuiteReport.csv",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${TestCaseName},${Status},${!runtime}",
+      "Value": "blue",
+      "Description": ""
+    }
+  ]
+}

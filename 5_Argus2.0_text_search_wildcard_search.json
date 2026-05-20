@@ -1,0 +1,222 @@
+{
+  "Name": "5_Argus2.0_text_search_wildcard_search",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "XClick",
+      "Target": "argus_dpi_120.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "14000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "server_field_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "192.168.2.183",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "loginbutton_dpi_120.png",
+      "Value": "",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "16000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "XClick // closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "scope_dpi_120.png",
+      "Value": "",
+      "Description": "click on scope"
+    },
+    {
+      "Command": "pause",
+      "Target": "8000",
+      "Value": "",
+      "Description": "pause for 7 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "clear_button_dpi_940.png",
+      "Value": "",
+      "Description": "click on clear button"
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": "pause for 3 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "submit_button_dpi_120.png",
+      "Value": "",
+      "Description": "click on submit button"
+    },
+    {
+      "Command": "pause",
+      "Target": "1000",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "searchfield_dpi_120.png",
+      "Value": "",
+      "Description": "clicking search field"
+    },
+    {
+      "Command": "XType",
+      "Target": "Ra*t",
+      "Value": "",
+      "Description": "To search by wildcard for document related to Radiant Maritime India Pvt Ltd"
+    },
+    {
+      "Command": "XClick",
+      "Target": "wildcard_radio_button_dpi_120.png",
+      "Value": "",
+      "Description": "click on wildcard search term radio button"
+    },
+    {
+      "Command": "pause",
+      "Target": "1000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "search_icon_dpi_120.png",
+      "Value": "",
+      "Description": "click on search icon"
+    },
+    {
+      "Command": "pause",
+      "Target": "50000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Document list visible",
+      "Value": "blue",
+      "Description": "Print in log"
+    },
+    {
+      "Command": "XMoveText",
+      "Target": "png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "XMove // docx_extension_dpi_120.png",
+      "Value": "",
+      "Description": "move over to docx"
+    },
+    {
+      "Command": "pause",
+      "Target": "500",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XMouseWheel",
+      "Target": "3",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "4000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "pdf_extn_dpi_120.png",
+      "Value": "",
+      "Description": "click pdf extension"
+    },
+    {
+      "Command": "XClick",
+      "Target": "apply_button_dpi_120.png",
+      "Value": "",
+      "Description": "click apply button for docx filter"
+    },
+    {
+      "Command": "pause",
+      "Target": "20000",
+      "Value": "",
+      "Description": "click apply button for docx filter"
+    },
+    {
+      "Command": "echo",
+      "Target": "Document related to Radiant Maritime India Pvt Ltd is present which matches with the wildcard query. Hence Text Search functionality is passed for wildcard search terms.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "5_Argus2.0_text_wildcard_search",
+      "Value": "TestCaseName",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "Report_Logger",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

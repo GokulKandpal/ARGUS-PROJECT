@@ -1,0 +1,306 @@
+{
+  "Name": "6_Argus2.0_text_search_proximity_search",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "XClick",
+      "Target": "argus_dpi_120.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "14000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "server_field_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "192.168.2.183",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Admin",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "loginbutton_dpi_120.png",
+      "Value": "",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "16000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "XClick // closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "scope_dpi_120.png",
+      "Value": "",
+      "Description": "click on scope"
+    },
+    {
+      "Command": "pause",
+      "Target": "8000",
+      "Value": "",
+      "Description": "pause for 8 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "clear_button_dpi_940.png",
+      "Value": "",
+      "Description": "click on clear button"
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": "pause for 3 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "submit_button_dpi_120.png",
+      "Value": "",
+      "Description": "click on submit button"
+    },
+    {
+      "Command": "pause",
+      "Target": "1000",
+      "Value": "",
+      "Description": "pause for 10 sec"
+    },
+    {
+      "Command": "XClick",
+      "Target": "searchfield_dpi_120.png",
+      "Value": "",
+      "Description": "clicking search field"
+    },
+    {
+      "Command": "XType",
+      "Target": "Radiant,India",
+      "Value": "",
+      "Description": "To search by proximity of words defined."
+    },
+    {
+      "Command": "XClick",
+      "Target": "proximity_radio_button_dpi_120.png",
+      "Value": "",
+      "Description": "click on proximity search term radio button"
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": "pressing tab 7 times to reach proximity input field"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": "pressing tab 7 times to reach proximity input field"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": "pressing tab 7 times to reach proximity input field"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": "pressing tab 7 times to reach proximity input field"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": "pressing tab 7 times to reach proximity input field"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": "pressing tab 7 times to reach proximity input field"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": "pressing tab 7 times to reach proximity input field"
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_DELETE}",
+      "Value": "",
+      "Description": "pressing backspace"
+    },
+    {
+      "Command": "pause",
+      "Target": "200",
+      "Value": "",
+      "Description": "pressing backspace"
+    },
+    {
+      "Command": "XType",
+      "Target": "10",
+      "Value": "",
+      "Description": "pressing backspace"
+    },
+    {
+      "Command": "comment",
+      "Target": "pause // 300",
+      "Value": "",
+      "Description": "pause"
+    },
+    {
+      "Command": "comment",
+      "Target": "XType // 10",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": "pressing tab 7 times to reach proximity input field"
+    },
+    {
+      "Command": "XClick",
+      "Target": "search_icon_dpi_120.png",
+      "Value": "",
+      "Description": "click on search icon"
+    },
+    {
+      "Command": "pause",
+      "Target": "45000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Document list visible",
+      "Value": "blue",
+      "Description": "Print in log"
+    },
+    {
+      "Command": "comment",
+      "Target": "XMoveText // docx",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "XMove // docx_extension_dpi_120.png",
+      "Value": "",
+      "Description": "move over to docx"
+    },
+    {
+      "Command": "comment",
+      "Target": "pause // 500",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "XMouseWheel // 3",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "pause // 4000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "XClick // pdf_extn_dpi_120.png",
+      "Value": "",
+      "Description": "click pdf extension"
+    },
+    {
+      "Command": "comment",
+      "Target": "XClick // apply_button_dpi_120.png",
+      "Value": "",
+      "Description": "click apply button for docx filter"
+    },
+    {
+      "Command": "comment",
+      "Target": "pause // 10000",
+      "Value": "",
+      "Description": "click apply button for docx filter"
+    },
+    {
+      "Command": "echo",
+      "Target": "Document related to Radiant Maritime India Pvt Ltd is present which matches with the proximate query. Hence Text Search functionality is passed for proximity search terms.",
+      "Value": "green",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "6_Argus2.0_text_search_proximity_search",
+      "Value": "TestCaseName",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "Report_Logger",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

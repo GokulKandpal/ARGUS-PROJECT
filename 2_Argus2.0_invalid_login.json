@@ -1,0 +1,138 @@
+{
+  "Name": "2_Argus2.0_invalid_login",
+  "CreationDate": "2026-5-19",
+  "Commands": [
+    {
+      "Command": "XClick",
+      "Target": "argus_dpi_120.png",
+      "Value": "#doubleclick",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "14000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "server_field_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "192.168.2.183",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Gokul",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "Gokul",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "loginbutton_dpi_120.png",
+      "Value": "",
+      "Description": "open"
+    },
+    {
+      "Command": "pause",
+      "Target": "5000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "bringBrowserToForeground // ",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "visualVerify // invalid_error_popup.png",
+      "Value": "timeout=10",
+      "Description": "Verify error popup appears"
+    },
+    {
+      "Command": "comment",
+      "Target": "OCRSearch // Invalid user name or password.",
+      "Value": "timeout=10",
+      "Description": "Read error text"
+    },
+    {
+      "Command": "comment",
+      "Target": "store // ${!ocrresult}",
+      "Value": "errorMessage",
+      "Description": "Store error message"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "200",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XClick",
+      "Target": "close_icon_dpi_120.png",
+      "Value": "",
+      "Description": "click on launch page close icon"
+    },
+    {
+      "Command": "echo",
+      "Target": "Invalid user name or password.",
+      "Value": "red",
+      "Description": "Print in log"
+    },
+    {
+      "Command": "comment",
+      "Target": "XClick // ok_button.png",
+      "Value": "",
+      "Description": "Click OK"
+    },
+    {
+      "Command": "comment",
+      "Target": "XClick // closeapplication_dpi_120.png",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "2_Argus2.0_invalid_login",
+      "Value": "TestCaseName",
+      "Description": ""
+    },
+    {
+      "Command": "run",
+      "Target": "Report_Logger",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}
